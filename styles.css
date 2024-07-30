@@ -15,8 +15,19 @@ header {
     background: #333;
     color: #fff;
     padding-top: 30px;
+    padding-bottom: 20px; /* Add padding to bottom */
     min-height: 70px;
     border-bottom: #77a1d3 3px solid;
+}
+
+header h1 {
+    margin: 0; /* Reset default margin */
+    padding-bottom: 10px; /* Add padding to bottom for spacing */
+}
+
+header p.designation {
+    margin: 0;
+    padding: 5px 0 20px; /* Add padding to top and bottom for spacing */
 }
 
 header a {
@@ -39,11 +50,6 @@ header li {
 header nav {
     float: right;
     margin-top: 10px;
-}
-
-header h1 {
-    float: left;
-    margin-top: 0;
 }
 
 section {
