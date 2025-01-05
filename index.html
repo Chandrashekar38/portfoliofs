@@ -7,6 +7,97 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/4d65d7f2b8.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+        header {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            font-size: 1.2em;
+            margin: 5px 0 15px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ffdd57;
+        }
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px 0;
+        }
+        section {
+            padding: 50px 0;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+        .project-card, .experience-card {
+            background: #ffffff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .project-card:hover, .experience-card:hover {
+            transform: translateY(-5px);
+        }
+        ul li {
+            margin: 10px 0;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .animated-section {
+            animation: fadeInUp 0.8s ease-in-out;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
 </head>
 <body>
 <header>
@@ -24,14 +115,12 @@
         </nav>
     </div>
 </header>
-
 <section id="about" class="animated-section">
     <div class="container">
         <h2>About Me</h2>
         <p>I am Chandrashekar Goud Kalali, a Software Developer with 3 years of experience specializing in Java-based backend development. Proficient in building scalable microservices, designing RESTful APIs, and optimizing application performance using Spring Boot and DevOps tools. Currently pursuing my Master's in Computer Science at DePaul University, graduating in November 2024.</p>
     </div>
 </section>
-
 <section id="projects" class="animated-section">
     <div class="container">
         <h2>Projects</h2>
@@ -45,20 +134,20 @@
         </div>
     </div>
 </section>
-
 <section id="experience" class="animated-section">
     <div class="container">
         <h2>Experience</h2>
-        <h3>Systems Engineer - Tata Consultancy Services</h3>
-        <p>January 2020 - July 2022</p>
-        <ul>
-            <li>Developed scalable microservices using Java and Spring Boot.</li>
-            <li>Automated CI/CD pipelines using Jenkins and AWS.</li>
-            <li>Migrated APIs and improved performance with Apache Camel.</li>
-        </ul>
+        <div class="experience-card">
+            <h3>Systems Engineer - Tata Consultancy Services</h3>
+            <p>January 2020 - July 2022</p>
+            <ul>
+                <li>Developed scalable microservices using Java and Spring Boot.</li>
+                <li>Automated CI/CD pipelines using Jenkins and AWS.</li>
+                <li>Migrated APIs and improved performance with Apache Camel.</li>
+            </ul>
+        </div>
     </div>
 </section>
-
 <section id="skills" class="animated-section">
     <div class="container">
         <h2>Skills</h2>
@@ -69,7 +158,6 @@
         </ul>
     </div>
 </section>
-
 <section id="contact" class="animated-section">
     <div class="container">
         <h2>Contact</h2>
@@ -79,7 +167,6 @@
         <p>GitHub: <a href="https://github.com/chandrashekar38" target="_blank">GitHub Profile</a></p>
     </div>
 </section>
-
 <footer>
     <div class="container">
         <p>&copy; 2024 Chandrashekar Goud Kalali</p>
