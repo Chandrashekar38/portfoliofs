@@ -14,6 +14,7 @@
             padding: 0;
             box-sizing: border-box;
             scroll-behavior: smooth;
+            background: #f4f4f9;
         }
         header {
             background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
@@ -64,7 +65,7 @@
             margin-bottom: 20px;
             font-size: 2em;
         }
-        .project-card, .experience-card {
+        .project-card, .experience-card, .certification-card {
             background: #ffffff;
             padding: 20px;
             margin: 20px 0;
@@ -72,7 +73,7 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s;
         }
-        .project-card:hover, .experience-card:hover {
+        .project-card:hover, .experience-card:hover, .certification-card:hover {
             transform: translateY(-5px);
         }
         ul li {
@@ -110,6 +111,7 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#skills">Skills</a></li>
+                <li><a href="#certifications">Certifications</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -126,11 +128,11 @@
         <h2>Projects</h2>
         <div class="project-card">
             <h3>SAFELOG – Secure Activity Monitoring</h3>
-            <p>Developed secure activity logging and alert systems using Spring Boot and PostgreSQL.</p>
+            <p>Developed secure activity logging and alert systems using Spring Boot and PostgreSQL. Implemented robust authentication using OAuth and JWT.</p>
         </div>
         <div class="project-card">
             <h3>File Retrieval Engine</h3>
-            <p>Java-based search engine for efficient dataset retrieval with optimized performance.</p>
+            <p>Java-based search engine for efficient dataset retrieval with sub-3 second response times. Automated CI/CD pipelines for streamlined deployment.</p>
         </div>
     </div>
 </section>
@@ -155,7 +157,23 @@
             <li><i class="fas fa-code"></i> Java, SQL</li>
             <li><i class="fas fa-cogs"></i> Spring Boot, REST APIs, OAuth</li>
             <li><i class="fas fa-cloud"></i> AWS, Jenkins, CI/CD Pipelines</li>
+            <li><i class="fas fa-database"></i> PostgreSQL, MySQL</li>
         </ul>
+    </div>
+</section>
+<section id="certifications" class="animated-section">
+    <div class="container">
+        <h2>Certifications</h2>
+        <div class="certification-card">
+            <h3>Introduction to Prompt Engineering for Generative AI</h3>
+            <p>LinkedIn Learning | January 2025</p>
+            <a href="https://www.linkedin.com/learning/certificates/12104ca486d29b40060a9e9d15292fb98151a4aacf53e23649782579680978ee?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B1Fl2ivl0RhaUfkseW0nhYg%3D%3D" target="_blank">View Certificate</a>
+        </div>
+        <div class="certification-card">
+            <h3>Spring Boot Microservices Developer</h3>
+            <p>Udemy | July 2022</p>
+            <a href="#" target="_blank">View Certificate</a>
+        </div>
     </div>
 </section>
 <section id="contact" class="animated-section">
