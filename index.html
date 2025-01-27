@@ -7,20 +7,20 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/4d65d7f2b8.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <!-- Header -->
     <header>
         <div class="container">
             <h1>Chandrashekar Goud Kalali</h1>
-            <p class="designation">Software Developer | Java Backend Specialist</p>
+            <p class="designation">Quality Assurance (QA) Engineer</p>
             <nav>
                 <ul>
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#skills">Skills</a></li>
-                    <li><a href="#blog">Blog</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -31,7 +31,7 @@
     <section id="about" class="animated-section">
         <div class="container">
             <h2>About Me</h2>
-            <p>I am Chandrashekar Goud Kalali, a Software Developer with 3 years of experience specializing in Java-based backend development. Proficient in building scalable microservices, designing RESTful APIs, and optimizing application performance using Spring Boot and DevOps tools. Currently pursuing my Master's in Computer Science at DePaul University, graduating in November 2024.</p>
+            <p>I am Chandrashekar Goud Kalali, a Quality Assurance (QA) Engineer with 5 years of professional experience in ensuring software quality through rigorous manual and automated testing practices. I specialize in functional, integration, and regression testing for web and mobile applications. Proficient in test automation, API testing, and defect lifecycle management, I have a strong understanding of Agile methodologies and cross-functional collaboration.</p>
         </div>
     </section>
 
@@ -40,12 +40,14 @@
         <div class="container">
             <h2>Projects</h2>
             <div class="project-card">
-                <h3>SAFELOG – Secure Activity Monitoring</h3>
-                <p>Developed secure activity logging and alert systems using Spring Boot and PostgreSQL. Implemented robust authentication using OAuth and JWT.</p>
+                <h3>RoughBook</h3>
+                <p>Developed and tested RoughBook, a web application for capturing and sharing raw thoughts. The application features a React frontend, a .NET Core backend, and secure OAuth2.0 authentication.</p>
+                <p><strong>Technologies Used:</strong> React, ASP.NET Core, SQLite, Selenium, Postman.</p>
             </div>
             <div class="project-card">
                 <h3>File Retrieval Engine</h3>
-                <p>Java-based search engine for efficient dataset retrieval with sub-3 second response times. Automated CI/CD pipelines for streamlined deployment.</p>
+                <p>Developed a Java-based retrieval engine to index and search large datasets, achieving sub-3 second query response times. Automated CI/CD pipelines using Jenkins for streamlined deployment.</p>
+                <p><strong>Technologies Used:</strong> Java, Maven, Jenkins, Agile methodologies.</p>
             </div>
         </div>
     </section>
@@ -55,13 +57,44 @@
         <div class="container">
             <h2>Experience</h2>
             <div class="experience-card">
-                <h3>Systems Engineer - Tata Consultancy Services</h3>
-                <p>January 2020 - July 2022</p>
+                <h3>Quality Assurance (QA) Engineer - Tata Consultancy Services</h3>
+                <p>January 2018 – July 2022</p>
                 <ul>
-                    <li>Developed scalable microservices using Java and Spring Boot.</li>
-                    <li>Automated CI/CD pipelines using Jenkins and AWS.</li>
-                    <li>Migrated APIs and improved performance with Apache Camel.</li>
+                    <li>Designed, developed, and executed test plans and test cases for web and mobile applications in logistics and industrial domains.</li>
+                    <li>Automated critical test workflows using Selenium WebDriver with Java, improving testing efficiency by 30%.</li>
+                    <li>Conducted API testing using Postman and SOAP UI, validating backend services for functionality, performance, and security.</li>
+                    <li>Performed database testing using SQL to validate data integrity and backend processes.</li>
+                    <li>Applied functional, regression, and integration testing to ensure seamless system operations across multiple modules.</li>
+                    <li>Identified and tracked defects using JIRA, collaborating with developers for quick resolution.</li>
+                    <li>Executed performance testing with JMeter, analyzing system behavior under varying loads.</li>
+                    <li>Played a key role in user acceptance testing (UAT), ensuring the application met end-user requirements.</li>
+                    <li>Participated in Agile team ceremonies, including sprint planning and daily standups, contributing to iterative development and testing processes.</li>
+                    <li><strong>Key Achievements:</strong>
+                        <ul>
+                            <li>Increased automation coverage by 40% through reusable script development.</li>
+                            <li>Successfully optimized API testing processes, improving testing accuracy and reducing execution time by 25%.</li>
+                            <li>Delivered multiple projects on time, ensuring high-quality standards in dynamic environments.</li>
+                        </ul>
+                    </li>
                 </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="animated-section">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="education-card">
+                <h3>Master's in Computer Science</h3>
+                <p><strong>DePaul University, Chicago</strong></p>
+                <p>GPA: 3.2</p>
+                <p><strong>Relevant Coursework:</strong> Software Testing and Quality Assurance, Web Applications, Principles of Database Systems, Agile Software Development, Distributed Systems, Object-Oriented Modeling.</p>
+            </div>
+            <div class="education-card">
+                <h3>Bachelor's in Computer Science</h3>
+                <p><strong>INTUH</strong></p>
+                <p>GPA: 3.0</p>
             </div>
         </div>
     </section>
@@ -71,28 +104,12 @@
         <div class="container">
             <h2>Skills</h2>
             <ul>
-                <li><i class="fas fa-code"></i> Java, SQL</li>
-                <li><i class="fas fa-cogs"></i> Spring Boot, REST APIs, OAuth</li>
+                <li><i class="fas fa-code"></i> Java, Python, SQL</li>
+                <li><i class="fas fa-cogs"></i> Selenium, Postman, TestNG, JMeter</li>
                 <li><i class="fas fa-cloud"></i> AWS, Jenkins, CI/CD Pipelines</li>
-                <li><i class="fas fa-database"></i> PostgreSQL, MySQL</li>
+                <li><i class="fas fa-database"></i> MySQL, PostgreSQL</li>
+                <li><i class="fas fa-tools"></i> JIRA, Bugzilla, Agile, Scrum</li>
             </ul>
-        </div>
-    </section>
-
-    <!-- Blog Section -->
-    <section id="blog" class="animated-section">
-        <div class="container">
-            <h2>Blog</h2>
-            <div class="blog-post">
-                <h3>Getting Started with Spring Boot</h3>
-                <p>Learn how to build scalable microservices with Spring Boot...</p>
-                <a href="#" class="read-more">Read More</a>
-            </div>
-            <div class="blog-post">
-                <h3>Java Best Practices</h3>
-                <p>Explore best practices for writing clean and efficient Java code...</p>
-                <a href="#" class="read-more">Read More</a>
-            </div>
         </div>
     </section>
 
@@ -100,7 +117,7 @@
     <section id="contact" class="animated-section">
         <div class="container">
             <h2>Contact</h2>
-            <form action="https://formspree.io/f/your-form-id" method="POST">
+            <form action="https://formspree.io/f/mgvoarqv" method="POST">
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Your Email" required>
                 <textarea name="message" placeholder="Your Message" required></textarea>
@@ -114,9 +131,7 @@
         <div class="container">
             <p>&copy; 2024 Chandrashekar Goud Kalali</p>
             <div class="social-links">
-                <a href="https://www.linkedin.com/in/ckalali" target="_blank"><i class="fab fa-linkedin"></i></a>
                 <a href="https://github.com/chandrashekar38" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://youtube.com/your-channel" target="_blank"><i class="fab fa-youtube"></i></a>
             </div>
         </div>
     </footer>

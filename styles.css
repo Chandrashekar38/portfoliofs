@@ -1,8 +1,8 @@
 /* General Styles */
-/* Add scroll padding to account for the sticky header */
 html {
     scroll-padding-top: 100px; /* Adjust this value based on your header height */
 }
+
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -87,13 +87,6 @@ h2 {
     transform: translateY(-5px);
 }
 
-/* Blog */
-.blog-post .read-more {
-    color: #2575fc;
-    text-decoration: none;
-    font-weight: 600;
-}
-
 /* Contact Form */
 form {
     display: flex;
@@ -157,4 +150,30 @@ footer {
     header h1 { font-size: 2em; }
     header p { font-size: 1em; }
     nav ul li { display: block; margin: 10px 0; }
+}
+
+/* Resume Section */
+#resume {
+    background: #2a2a2a;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.resume-options {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background: #2575fc;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #6a11cb;
 }
