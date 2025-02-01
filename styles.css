@@ -940,3 +940,9 @@ body.light-theme {
 .reveal {
     animation: fadeUp 0.6s ease-out forwards;
 }
+.about-text {
+    text-align: center;          /* Centers the text horizontally */
+    padding: 20px;               /* Adds space around the text */
+    max-width: 800px;            /* Limits the width of the text block */
+    margin: 0 auto;              /* Centers the block horizontally */
+}
