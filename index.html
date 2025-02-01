@@ -37,6 +37,77 @@
                 <h1>Chandrashekar Goud Kalali</h1>
                 <p class="designation">Software Developer | Java Backend Specialist</p>
                 <p>Building scalable solutions with passion and precision</p>
+                <p class="mentorship-highlight">Tech Career Mentor & Guide</p>
+            </div>
+        </div>
+    </section>
+    <section id="mentorship" class="section mentorship-section">
+        <div class="container">
+            <div class="mentorship-grid">
+                <div class="mentorship-content">
+                    <h2 class="section-title">Career Mentorship Program</h2>
+                    <div class="mentorship-tagline">
+                        <span class="highlight">Empowering the Next Generation</span>
+                        <p class="lead-text">Guiding students towards successful tech careers through personalized mentorship</p>
+                    </div>
+                    <div class="mentorship-features">
+                        <div class="feature">
+                            <i class="fas fa-compass"></i>
+                            <h3>Career Direction</h3>
+                            <p>Helping students find their path in technology and make informed career decisions</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-road"></i>
+                            <h3>Goal Achievement</h3>
+                            <p>Creating structured roadmaps for achieving career objectives and professional growth</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <h3>Mistake Prevention</h3>
+                            <p>Sharing personal experiences to help students avoid common career pitfalls</p>
+                        </div>
+                    </div>
+                    <!-- Replace your current testimonials section with this -->
+<section id="testimonials" class="section testimonials-section">
+    <div class="container">
+        <h2>What Students Say</h2>
+        <div class="testimonials-slider">
+            <!-- Testimonials will be dynamically inserted here -->
+        </div>
+        
+        <!-- Add Testimonial Button -->
+        <div class="add-testimonial-container">
+            <button class="add-testimonial-btn" onclick="openTestimonialForm()">
+                Share Your Experience
+            </button>
+        </div>
+        
+        <!-- Testimonial Submission Form (Hidden by default) -->
+        <div id="testimonial-form" class="testimonial-form-modal" style="display: none;">
+            <form action="YOUR_FORMSPREE_ENDPOINT" method="POST" class="testimonial-form">
+                <h3>Share Your Experience</h3>
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="title" placeholder="Your Title/Role" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="testimonial" placeholder="Share your mentorship experience..." required></textarea>
+                </div>
+                <div class="form-buttons">
+                    <button type="submit" class="submit-btn">Submit</button>
+                    <button type="button" class="cancel-btn" onclick="closeTestimonialForm()">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+                    <div class="cta-container">
+                        <a href="#contact" class="mentorship-cta">Join Mentorship Program</a>
+                        <p class="cta-subtext">Limited spots available for dedicated students</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -124,25 +195,72 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="section">
         <div class="container">
-            <h2>Contact</h2>
-            <form id="contact-form" class="contact-form">
-                <div class="form-group">
-                    <input type="text" name="name" placeholder="Your Name" required>
+            <h2>Get in Touch</h2>
+            <div class="forms-container">
+                <!-- Mentorship Application Form -->
+                <div class="form-wrapper mentorship-form">
+                    <h3>Join Mentorship Program</h3>
+                    <form action="https://formspree.io/f/manqjbqv" method="POST" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <select name="current_status" required>
+                                <option value="">Current Status</option>
+                                <option value="student">Student</option>
+                                <option value="recent_graduate">Recent Graduate</option>
+                                <option value="professional">Working Professional</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select name="mentorship_area" required>
+                                <option value="">Area of Interest</option>
+                                <option value="career_guidance">Career Guidance</option>
+                                <option value="technical_skills">Technical Skills</option>
+                                <option value="interview_prep">Interview Preparation</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="goals" placeholder="Brief description of your career goals and what you hope to achieve through mentorship" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <select name="preferred_meeting_time" required>
+                                <option value="">Preferred Meeting Time</option>
+                                <option value="weekday_morning">Weekday Mornings</option>
+                                <option value="weekday_evening">Weekday Evenings</option>
+                                <option value="weekend">Weekends</option>
+                            </select>
+                        </div>
+                        <input type="hidden" name="_subject" value="New Mentorship Application">
+                        <button type="submit" class="submit-btn">Apply for Mentorship</button>
+                    </form>
                 </div>
-                <div class="form-group">
-                    <input type="email" name="email" placeholder="Your Email" required>
+    
+                <!-- General Contact Form -->
+                <div class="form-wrapper general-form">
+                    <h3>General Inquiry</h3>
+                    <form action="https://formspree.io/f/mgvoarqv" method="POST" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <input type="hidden" name="_subject" value="New Contact Form Submission">
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
                 </div>
-                <div class="form-group">
-                    <textarea name="message" placeholder="Your Message" required></textarea>
-                </div>
-                <button type="submit" class="submit-btn">Send Message</button>
-            </form>
+            </div>
         </div>
     </section>
-
     <!-- Footer -->
     <footer>
         <div class="container">

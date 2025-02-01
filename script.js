@@ -207,3 +207,88 @@ window.addEventListener('load', () => {
         loader.classList.add('loader--hidden');
     }
 });
+
+// Testimonial Manager Class
+class TestimonialManager {
+    constructor() {
+        this.currentIndex = 0;
+        this.autoPlayInterval = null;
+        this.testimonials = [];
+        this.container = document.querySelector('.testimonials-slider');
+        this.isPaused = false;
+        
+        this.init();
+    }
+    
+    init() {
+        // Fetch initial testimonials
+        this.fetchTestimonials();
+        
+        // Start autoplay
+        this.startAutoPlay();
+        
+        // Add event listeners
+        this.container.addEventListener('mouseenter', () => this.pauseSlider());
+        this.container.addEventListener('mouseleave', () => this.resumeSlider());
+    }
+    
+    async fetchTestimonials() {
+        try {
+            const response = await fetch('YOUR_FORMSPREE_ENDPOINT/testimonials');
+            const data = await response.json();
+            this.testimonials = data;
+            this.renderTestimonials();
+        } catch (error) {
+            console.error('Error fetching testimonials:', error);
+        }
+    }
+    
+    renderTestimonials() {
+        const current = this.testimonials[this.currentIndex];
+        const testimonialHTML = `
+            <div class="testimonial-slide fade-in">
+                <div class="testimonial-content">
+                    <div class="quote-icon">❝</div>
+                    <p class="testimonial-text">${current.message}</p>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="${current.image || '/api/placeholder/60/60'}" alt="${current.name}">
+                        </div>
+                        <div class="author-info">
+                            <h4>${current.name}</h4>
+                            <p>${current.title}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
+        
+        this.container.innerHTML = testimonialHTML;
+    }
+    
+    nextTestimonial() {
+        this.currentIndex = (this.currentIndex + 1) % this.testimonials.length;
+        this.renderTestimonials();
+    }
+    
+    startAutoPlay() {
+        this.autoPlayInterval = setInterval(() => {
+            if (!this.isPaused) {
+                this.nextTestimonial();
+            }
+        }, 5000);
+    }
+    
+    pauseSlider() {
+        this.isPaused = true;
+    }
+    
+    resumeSlider() {
+        this.isPaused = false;
+    }
+}
+
+// Initialize on page load
+document.addEventListener('DOMContentLoaded', () => {
+    new TestimonialManager();
+});

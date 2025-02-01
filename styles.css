@@ -393,3 +393,550 @@ body.light-theme {
         max-width: 350px; /* Slightly smaller on mobile */
     }
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .mentorship-features {
+        grid-template-columns: 1fr;
+    }
+    
+    .highlight {
+        font-size: 1.75rem;
+    }
+}
+.mentorship-section {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--light-bg);
+    padding: 6rem 0;
+    margin-top: -2rem;
+}
+
+.mentorship-grid {
+    display: grid;
+    gap: 2rem;
+}
+
+.mentorship-content {
+    text-align: center;
+}
+
+.mentorship-tagline {
+    margin-bottom: 3rem;
+}
+
+.highlight {
+    font-size: 2rem;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.lead-text {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.mentorship-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.feature {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+}
+
+.feature i {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.feature h3 {
+    margin-bottom: 1rem;
+}
+
+.cta-container {
+    margin-top: 3rem;
+}
+
+.mentorship-cta {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: var(--light-bg);
+    color: var(--primary-color);
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: transform 0.3s ease;
+}
+
+.mentorship-cta:hover {
+    transform: scale(1.05);
+}
+
+.cta-subtext {
+    margin-top: 1rem;
+    opacity: 0.8;
+}
+
+/* Update the hero section to mention mentorship */
+.hero-text p.designation {
+    font-size: 1.5rem;
+}
+
+.hero-text p.mentorship-highlight {
+    color: #ffd700;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+/* Testimonials Styles */
+.testimonials-section {
+    background: var(--card-dark);
+    padding: 5rem 0;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.testimonial-card {
+    background: var(--card-light);
+    padding: 2rem;
+    border-radius: 15px;
+    display: flex;
+    gap: 1.5rem;
+    align-items: start;
+}
+
+.testimonial-image img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonial-content p {
+    font-style: italic;
+    margin-bottom: 1rem;
+    color: var(--dark-bg);
+}
+
+.testimonial-author h4 {
+    color: var(--primary-color);
+    margin-bottom: 0.25rem;
+}
+
+.testimonial-author p {
+    font-size: 0.9rem;
+    color: var(--dark-bg);
+}
+
+/* Updated Contact Form Styles */
+.forms-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.form-wrapper {
+    background: var(--card-dark);
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+.form-wrapper h3 {
+    margin-bottom: 1.5rem;
+    color: var(--light-bg);
+    text-align: center;
+}
+
+.form-group select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    color: var(--light-bg);
+    margin-bottom: 1rem;
+}
+
+.form-group select option {
+    background: var(--card-dark);
+    color: var(--light-bg);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .forms-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .testimonial-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .testimonial-image {
+        margin: 0 auto;
+    }
+}
+
+/* Light Theme Adjustments */
+body.light-theme .testimonial-card {
+    background: var(--card-light);
+}
+
+body.light-theme .testimonial-content p,
+body.light-theme .testimonial-author p {
+    color: var(--dark-bg);
+}/* New Color Scheme and Aesthetic Updates */
+:root {
+    --primary-color: #A78BFA;  /* Soft purple */
+    --secondary-color: #8B5CF6; /* Deep purple */
+    --accent-color: #F0ABFC;   /* Light pink */
+    --dark-bg: #1F2937;        /* Deep navy */
+    --darker-bg: #111827;      /* Darker navy */
+    --light-bg: #F3F4F6;       /* Light gray */
+    --card-dark: #374151;      /* Medium gray */
+    --card-light: #FFFFFF;     /* White */
+    --text-primary: #F9FAFB;   /* Almost white */
+    --text-secondary: #D1D5DB; /* Light gray */
+    --gradient-1: linear-gradient(135deg, #A78BFA, #8B5CF6);
+    --gradient-2: linear-gradient(135deg, #8B5CF6, #F0ABFC);
+    --transition: all 0.3s ease;
+}
+
+/* Updated Testimonials Section */
+.testimonials-section {
+    background: var(--darker-bg);
+    padding: 5rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonials-slider {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.testimonial-slide {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 2.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+}
+
+.testimonial-content {
+    position: relative;
+}
+
+.quote-icon {
+    position: absolute;
+    top: -30px;
+    left: -10px;
+    font-size: 4rem;
+    color: var(--accent-color);
+    opacity: 0.3;
+}
+
+.testimonial-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.author-image img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid var(--accent-color);
+}
+
+.author-info h4 {
+    color: var(--text-primary);
+    margin-bottom: 0.25rem;
+}
+
+.author-info p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+/* Fade Animation */
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Updated General Styles */
+body {
+    background: var(--dark-bg);
+    color: var(--text-primary);
+}
+
+.section {
+    position: relative;
+}
+
+.section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at top right, rgba(167, 139, 250, 0.1), transparent);
+    pointer-events: none;
+}
+
+/* Updated Hero Section */
+.hero {
+    background: var(--gradient-1);
+}
+
+/* Updated Cards */
+.project-card, .skill-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Form Styling */
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--text-primary);
+}
+
+.submit-btn {
+    background: var(--gradient-2);
+    border: none;
+    color: var(--text-primary);
+}
+
+/* Light Theme Adjustments */
+body.light-theme {
+    --dark-bg: #F3F4F6;
+    --darker-bg: #E5E7EB;
+    --text-primary: #1F2937;
+    --text-secondary: #4B5563;
+}
+/* Refined Color Scheme and Aesthetic Updates */
+:root {
+    /* Core Colors */
+    --primary-color: #9F7AEA;    /* Soft lavender */
+    --secondary-color: #D6BCFA;   /* Light lavender */
+    --accent-color: #E9D5FF;      /* Pale lavender */
+    --sage-green: #84A98C;        /* Muted sage */
+    --dusty-rose: #E8B4BC;        /* Soft rose */
+    
+    /* Background Colors */
+    --dark-bg: #2D3748;           /* Deep slate */
+    --darker-bg: #1A202C;         /* Darker slate */
+    --light-bg: #F7FAFC;          /* Off white */
+    
+    /* Card Colors */
+    --card-dark: #4A5568;         /* Medium slate */
+    --card-light: #FFFFFF;        /* Pure white */
+    
+    /* Text Colors */
+    --text-primary: #EDF2F7;      /* Bright white */
+    --text-secondary: #CBD5E0;    /* Light gray */
+    
+    /* Gradient Combinations */
+    --gradient-1: linear-gradient(135deg, #9F7AEA, #D6BCFA);
+    --gradient-2: linear-gradient(135deg, #E9D5FF, #9F7AEA);
+    --gradient-3: linear-gradient(to right, rgba(159, 122, 234, 0.2), rgba(232, 180, 188, 0.2));
+    --gradient-soft: linear-gradient(135deg, rgba(159, 122, 234, 0.1), rgba(214, 188, 250, 0.1));
+    
+    --transition: all 0.3s ease;
+}
+
+/* Hero Section Update */
+.hero {
+    background: linear-gradient(135deg, var(--darker-bg), var(--dark-bg));
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--gradient-3);
+    opacity: 0.8;
+}
+
+/* Section Backgrounds */
+.section {
+    position: relative;
+    background: linear-gradient(135deg, var(--darker-bg), var(--dark-bg));
+}
+
+.section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--gradient-soft);
+    pointer-events: none;
+}
+
+/* Card Styling */
+.project-card, .skill-card, .testimonial-slide {
+    background: rgba(74, 85, 104, 0.3);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.project-card:hover, .skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Button Styling */
+.mentorship-cta, .submit-btn {
+    background: var(--gradient-1);
+    color: var(--text-primary);
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 15px rgba(159, 122, 234, 0.3);
+    transition: all 0.3s ease;
+}
+
+.mentorship-cta:hover, .submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(159, 122, 234, 0.4);
+}
+
+/* Navigation Update */
+.nav-container {
+    background: rgba(42, 55, 72, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Form Styling */
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+    background: rgba(74, 85, 104, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--text-primary);
+    backdrop-filter: blur(5px);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(159, 122, 234, 0.2);
+}
+
+/* Testimonial Specific Styling */
+.testimonial-slide {
+    background: rgba(74, 85, 104, 0.2);
+    border-radius: 20px;
+    padding: 2.5rem;
+}
+
+.testimonial-author img {
+    border: 3px solid var(--primary-color);
+    box-shadow: 0 0 20px rgba(159, 122, 234, 0.3);
+}
+
+/* Light Theme Adjustments */
+body.light-theme {
+    --dark-bg: #F7FAFC;
+    --darker-bg: #EDF2F7;
+    --text-primary: #2D3748;
+    --text-secondary: #4A5568;
+    
+    .project-card, .skill-card, .testimonial-slide {
+        background: rgba(255, 255, 255, 0.8);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    }
+    
+    .nav-container {
+        background: rgba(247, 250, 252, 0.8);
+    }
+}
+
+/* Additional Aesthetic Elements */
+.section h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--gradient-1);
+    margin: 1rem auto;
+    border-radius: 2px;
+}
+
+.skill-card i {
+    background: var(--gradient-1);
+    -webkit-background-clip: text; /* For WebKit-based browsers (e.g., Chrome, Safari) */
+    background-clip: text;         /* Standard property for all browsers */
+    -webkit-text-fill-color: transparent; /* Makes the text transparent */
+    color: transparent;            /* Fallback for browsers that don't support -webkit-text-fill-color */
+}
+
+/* Soft Animations */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.reveal {
+    animation: fadeUp 0.6s ease-out forwards;
+}
